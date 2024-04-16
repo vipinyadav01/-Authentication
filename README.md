@@ -35,6 +35,4 @@ Contributions are welcome! If you'd like to contribute to this project, please f
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
-
-- This project was inspired by [Flask Mega-Tutorial](https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world).
 - Special thanks to [vipinyadav01](https://github.com/vipinyadav01) for providing the initial version of this project.
