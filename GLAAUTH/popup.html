@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication Simulation</title>
+  </head>
+  <body>
+    <h1>Authentication Simulation</h1>
+    <button id="authenticateBtn">Authenticate</button>
+
+    <script>
+      // Function to perform authentication
+      function authenticate(username, password, callback) {
+        // Simulate authentication by checking if username and password are correct
+        if (username === "vipinyadav_cs22" && password === "#k3s4y66GLA") {
+          callback({ success: true });
+        } else {
+          callback({ success: false });
+        }
+      }
+
+      // Event listener for the authenticate button
+      document
+        .getElementById("authenticateBtn")
+        .addEventListener("click", function () {
+          // Prompt user for username and password
+          var username = prompt("Enter your username:");
+          var password = prompt("Enter your password:");
+
+          // Call the authenticate function with the provided credentials
+          authenticate(username, password, function (response) {
+            if (response.success) {
+              alert("Authentication successful");
+            } else {
+              alert("Authentication failed");
+            }
+          });
+        });
+    </script>
+  </body>
+</html>
